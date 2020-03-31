@@ -41,6 +41,15 @@ public class EmployeeCard {
         isWoman = isWoman;
     }
 
+    // Исправленный конструктор в новый метод класса
+    EmployeeCard(String name, int age, double effective, double salary, boolean isWoman) {
+        this.name = name;
+        this.age = age;
+        this.effective = effective;
+        this.salary = salary;
+        this.isWoman = isWoman;
+    }
+
     /**
      * Метод для удобного вывода информации
      *
@@ -56,6 +65,18 @@ public class EmployeeCard {
         }
         return "Имя работника - " + name + ". Его возраст - " + age + " лет. Его зарплата - " + salary + " в час. Пол - " + sex;
     }
+
+    public String toString2() {
+        String sex;
+        if (isWoman == true) {
+            sex = "Женский";
+        } else {
+            sex = "Мужской";
+        }
+        return "Имя работника - " + name + ". Его возраст - " + age + " лет. Очки эффективности - " + effective
+                +". Его зарплата - " + salary + " в час. Пол - " + sex;
+    }
+
     // Вывести несколько сотрудников с разнымии параметрами.
     // Используйте метод toString для вывода информации о работнике.
     // Пример: Имя работника - Антон. Его возраст - 28 лет. Его зарплата - 15.5 в час. Пол - мужской.

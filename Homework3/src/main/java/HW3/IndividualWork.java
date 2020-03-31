@@ -5,7 +5,17 @@ public class IndividualWork {
     /**
      * Метод вывода таблицы умножения 10х10
      */
-    public void table() {}
+    public static void table() {
+        int res;
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 10; j++) {
+                res = i * j;
+                System.out.printf("%-1s %3d", " ", res);
+            }
+            System.out.println(" ");
+        }
+    }
+
 
     // Реализовать метод вывода таблицы умножения 10x10 используя циклы
     // Числа разделять пробелами.
@@ -23,7 +33,8 @@ public class IndividualWork {
      * @param time - число, означающее время, прошедшее сначала часа
      * @return string - улица, на которой едет автобус в текущее время
      */
-    public void bus(double time) {}
+    public void bus(double time) {
+    }
 
 //  Автобус едет по маршруту, вначале каждого часа, в течение 8 минут он проезжает улицу "Комсомольская",
 //  затем в течение следующих 3-х минут проезжает улицу "Ленина",
