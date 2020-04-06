@@ -90,7 +90,7 @@ public class MainPageSteps {
     }
 
 
-    private void sleep1s(){
+    private void sleeps(){
         try {
             Thread.sleep(250);
         }catch (InterruptedException e){
