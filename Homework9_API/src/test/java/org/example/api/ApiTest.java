@@ -18,6 +18,8 @@ import java.util.UUID;
 
 import static io.restassured.RestAssured.given;
 
+//https://petstore.swagger.io/
+
 public class ApiTest {
     @BeforeClass
     public void prepare() throws IOException {
